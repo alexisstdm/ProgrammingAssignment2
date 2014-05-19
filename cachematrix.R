@@ -3,6 +3,9 @@
 
 ## Write a short comment describing this function
 
+## This function uses the variable environment behavior for implement the object 
+## functionality. This kind of object is used for storing the matrix information
+## and the inverse when it is calculated.
 makeCacheMatrix <- function(x = matrix()) {
 	m_inverse <- NULL;
 	set <- function(y){
@@ -18,6 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
+## This function calculates the inverse for the matrix if it is not yet calculated 
+## before
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 	inverse <- x$getinverse();
